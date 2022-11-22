@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM  from 'react-dom';
 import AppHeader from './AppHeader';
-import AppFooter from './AppFooter';
+// import AppFooter from './AppFooter';
 import AppContent from './AppContent';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -30,7 +30,7 @@ class App extends Component {
       <div className="app">
         <AppHeader {...myProps} posts={this.state.posts} handlePostChange={this.handlePostChange} />
         <AppContent handlePostChange={this.handlePostChange} />
-        <AppFooter />
+        {/* <AppFooter /> */}
       </div>
     );
   }
