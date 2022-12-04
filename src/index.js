@@ -30,9 +30,9 @@ class App extends Component {
     return (
       <div className="app">
         <AppHeader {...myProps} posts={this.state.posts} handlePostChange={this.handlePostChange} />
-        <AppContent handlePostChange={this.handlePostChange} />
+        <AppContent handlePostChange={this.handlePostChange} posts={this.state.posts} />
         {/* <AppFooter /> */}
-        <AppFooterFunctionalComponent />
+        <AppFooterFunctionalComponent myProperty={"Hello, world"}/>
       </div>
     );
   }

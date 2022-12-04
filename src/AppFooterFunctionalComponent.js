@@ -6,7 +6,7 @@ export default function AppFooterFunctionalComponent(props) {
     return (
       <Fragment>
         <hr />
-        <p className="footer">Copyright &copy; 2020 - { currentYear } Acme Ltd.</p>
+        <p className="footer">Copyright &copy; 2020 - { currentYear } Acme Ltd. {props.myProperty}</p>
       </Fragment>
     );
 }
